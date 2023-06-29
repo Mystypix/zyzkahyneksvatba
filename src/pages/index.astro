@@ -1,21 +1,23 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '@fontsource/mali/200.css';
-import '@fontsource-variable/montserrat';
+import '@fontsource/mali/700.css';
+import '@fontsource/lekton/400.css';
+import '@fontsource/lekton/700.css';
 ---
 
-<Layout title="Welcome to Astro.">
-	<main class="bg-white font-default text-center break-words text-xl">
-		<section class="min-h-screen flex items-center before:bg-gradient-to-t before:from-white before:content-[''] before:absolute before:w-full before:h-6 before:bottom-full before:left-0 before:bg-gradient-to-top before:to-white after:content-[''] after:absolute after:w-full after:h-6 after:top-full after:left-0 w-screen px-2 py-10 relative">
+<Layout title="ZáHY">
+	<main class="bg-white font-default text-center break-words text-xl text-slate-800">
+		<section class="min-h-screen flex items-center w-screen px-2 py-20 relative">
 			<img class="block object-cover w-screen h-screen opacity-30 absolute top-0 left-0" src="intro.jpg" />
-			<div class="mx-auto max-w-3xl">
-			<h1 class="text-5xl font-thin font-title mb-8">Vítejte!</h1>
-			<p class="font-default">Zde najdete všechny potřebné informace na jednom místě. Budeme je průběžně aktualizovat a upřesňovat s tím, jak budou věci nabývat jasnějších obrysů.</p>
-			<p>Stránky určitě nemusíte kontrolovat každý den. Naše tempo příprav není nijak zběsilé a dojde-li na stránkách k nějaké větší změně, dostanete od nás email. Aby vám email přišel a abychom na vás měli nějaký kontakt, prosíme všechny, kteří jste nám ještě nenapsali, o potvrzení účasti na email <a class="underline" href="mailto:zuzkahyneksvatba@gmail.com">zuzkahyneksvatba@gmail.com</a>. Moc děkujeme!</p>
-			<p>Těšíme se. Těšte se s námi. Svatba je již ZáHY!</p>
+			<div class="text-shadow shadow-slate-500 mx-auto max-w-3xl text-2xl relative">
+				<h1 class="text-5xl font-title mb-8">Vítejte!</h1>
+				<p>Zde najdete všechny potřebné informace na jednom místě. Budeme je průběžně aktualizovat a upřesňovat s tím, jak budou věci nabývat jasnějších obrysů.</p>
+				<p>Stránky určitě nemusíte kontrolovat každý den. Naše tempo příprav není nijak zběsilé a dojde-li na stránkách k nějaké větší změně, dostanete od nás email. Aby vám email přišel a abychom na vás měli nějaký kontakt, prosíme všechny, kteří jste nám ještě nenapsali, o potvrzení účasti na email <a class="underline" href="mailto:zuzkahyneksvatba@gmail.com">zuzkahyneksvatba@gmail.com</a>. Moc děkujeme!</p>
+				<p>Těšíme se. Těšte se s námi. Svatba je již ZáHY!</p>
 			</div>
 		</section>
-		<section class="before:bg-gradient-to-t before:from-white before:content-[''] before:absolute before:w-full before:h-6 before:bottom-full before:left-0 before:bg-gradient-to-top before:to-white after:content-[''] after:absolute after:w-full after:h-6 after:top-full after:left-0 w-screen px-2 py-10 relative">
+		<section class="w-screen px-2 py-20 relative">
 			<div class="mx-auto max-w-3xl">
 				<h2 class="font-title mb-6 text-4xl font-extralight">Obřad</h2>
 				<h3 class="text-xl font-bold">Kdy?</h3>
@@ -32,9 +34,9 @@ import '@fontsource-variable/montserrat';
 			</div>
 		</section>
 		<div class="h-[50rem] bg-fixed bg-cover bg-center" style="background-image: url('bg-1.jpg')"></div>
-		<section class="before:bg-gradient-to-t before:from-white before:content-[''] before:absolute before:w-full before:h-6 before:bottom-full before:left-0 before:bg-gradient-to-top before:to-white after:content-[''] after:absolute after:w-full after:h-6 after:top-full after:left-0 w-screen px-2 py-10 relative">
+		<section class="w-screen px-2 py-20 relative">
 			<div class="mx-auto max-w-3xl">
-				<h2 class="font-title mb-6 text-4xl font-extralight">Raut a párty</h2>
+				<h2 class="font-title mb-20 text-4xl font-extralight">Raut a párty</h2>
 				<h3 class="font-bold">Začátek?</h3> 
 				<p>ještě upřesníme, ale určitě ne dřív než v 15:30 hod</p>
 				<h3 class="font-bold">Kde?</h3> 
@@ -48,16 +50,16 @@ import '@fontsource-variable/montserrat';
 			</div>
 		</section>
 		<div class="h-[50rem] bg-fixed bg-cover bg-center" style="background-image: url('bg-2.jpg')"></div>
-		<section class="before:bg-gradient-to-t before:from-white before:content-[''] before:absolute before:w-full before:h-6 before:bottom-full before:left-0 before:bg-gradient-to-top before:to-white after:content-[''] after:absolute after:w-full after:h-6 after:top-full after:left-0 w-screen px-2 py-10 relative">
+		<section class="w-screen px-2 py-20 relative">
 			<div class="mx-auto max-w-3xl">
-				<h2 class="font-title mb-6 text-4xl font-extralight">Ubytování</h2>
+				<h2 class="font-title mb-20 text-4xl font-extralight">Ubytování</h2>
 				<p>Nabízíme možnost přespání na chatě Balada. A to z pátku na sobotu a ze soboty na neděli. Přednost dáme hostům z daleka, tedy nelibereckým. Ale nebojte se nám napsat i vy liberečtí, bude-li dost místa, určitě vás taky rádi ubytujeme.</p>
 			</div>
 		</section>
 		<div class="h-[50rem] bg-fixed bg-cover bg-center" style="background-image: url('bg-3.jpg')"></div>
-		<section class="before:bg-gradient-to-t before:from-white before:content-[''] before:absolute before:w-full before:h-6 before:bottom-full before:left-0 before:bg-gradient-to-top before:to-white after:content-[''] after:absolute after:w-full after:h-6 after:top-full after:left-0 w-screen px-2 py-10 relative">
+		<section class="w-screen px-2 py-20 relative">
 			<div class="mx-auto max-w-3xl">
-				<h2 class="font-title mb-6 text-4xl font-extralight">Dary</h2>
+				<h2 class="font-title mb-20 text-4xl font-extralight">Dary</h2>
 				<p>Největším darem pro nás bude pomoc s přípravami. Zejména s rautem. Oceníme všechny vaše pečené, vařené, smažené, slané i sladké majstrštyky.</p>
 			</div>
 		</section>

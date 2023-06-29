@@ -1,3 +1,5 @@
+const plugin = require("tailwindcss/plugin");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
@@ -5,9 +7,23 @@ module.exports = {
     extend: {
       fontFamily: {
         title: ["Mali"],
-        default: ["Nunito Variable"],
+        default: ["Lekton"],
+      },
+      textShadow: {
+        DEFAULT: "0 2px 4px var(--tw-shadow-color)",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          "text-shadow": (value) => ({
+            textShadow: value,
+          }),
+        },
+        { values: theme("textShadow") }
+      );
+    }),
+  ],
 };

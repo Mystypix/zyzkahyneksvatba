@@ -6,8 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        title: ["Mali"],
-        default: ["Lekton"],
+        default: ["Mali"],
       },
       textShadow: {
         DEFAULT: "0 2px 4px var(--tw-shadow-color)",
